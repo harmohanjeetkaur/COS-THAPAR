@@ -1,0 +1,610 @@
+<html>
+<head>
+<title>E Commerce Website</title>
+<link rel="stylesheet"  href="style.css" >
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" ></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+</head>
+<body>  
+<div class="top-nav-bar">
+<div class="search-box">
+        <i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
+        <i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
+<img src="3.png" class="logo">
+<input type=text class="form-control">
+<span class ="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
+</div>
+<div class="menu-bar">
+    <ul>
+        <li><a href="#"><i class="fa fa-shopping-basket"></i>
+            cart</a> </li>
+        <li><a href="#">Sign Up</a> </li>
+        <li><a href="#">Log In</a> </li>
+    </ul>
+</div>
+</div>
+
+
+<section class="header">
+    <div class ="side-menu" id ="side-menu">
+        <ul>
+            <li>On Sale<i class="fa fa-angle-right"></i>
+                <ul>
+                    <li>T Shirts</li>
+                    <li>Jeans</li>
+                    <li>School Bags</li>
+                    <li>Shoes</li>
+                    <li>Cold Drink</li>
+                    <li>Bed Sheet</li>
+                    <li>Kids </li>
+                    <li>Ladies Wear</li>
+                </ul>
+            </li>
+            <li>Mobiles<i class="fa fa-angle-right"></i>
+                <ul>
+                    <li>Samsung</li>
+                    <li>MI</li>
+                    <li>VIVO</li>
+                    <li>OPPO</li>
+                    <li>Motorola</li>
+                    <li>Nokia</li>
+                    <li>Sony</li>
+                    <li>HTC</li>
+                    <li>Lenovo</li>
+                </ul>
+            </li>
+            <li>Laptops<i class="fa fa-angle-right"></i>
+                <ul>
+                    <li>HP</li>
+                    <li>DELL</li>
+                    <li>Sony</li>
+                    <li>SamSung</li>
+                    <li>Apple</li>
+                    <li>Asus</li>
+                    <li>Lenovo</li>
+                    <li>Acer</li>
+                </ul>
+            </li>
+            <li>Men Wear<i class="fa fa-angle-right"></i>
+                <ul>
+                    <li>Levi's</li>
+                    <li>Pepe Jeans</li>
+                    <li>Benetton</li>
+                    <li>Tommy Hilfiger</li>
+                    <li>Wrangler</li>
+                    <li>Lee</li>
+                    <li>Adidas</li>
+                    <li>Flying Machine</li>
+                    <li>Sparky</li>
+                </ul>
+            </li>
+            <li>Women Wear<i class="fa fa-angle-right"></i>
+                <ul>
+                    <li>Lisca</li>
+                    <li>Salsa </li>
+                    <li>aeafally</li>
+                    <li>Status</li>
+                    <li>Palmers</li>
+                    <li>Ory</li>
+                    <li>Seafally</li>
+                    <li>Calvin klein</li>
+                  <li>Falke</li>
+                </ul>
+            </li>
+            <li>Groceries<i class="fa fa-angle-right"></i>
+                <ul>
+                    <li>Rice</li>
+                    <li>Flour</li>
+                    <li>Sugar</li>
+                    <li>Salt</li>
+                    <li>Wheat</li>
+                    <li>Corn</li>
+                    <li>Sea Food</li>
+                    <li>Maize</li>
+                    <li>Proso</li>
+                </ul>
+            </li>
+            <li>Shoes<i class="fa fa-angle-right"></i>
+                <ul>
+                    <li>Nike</li>
+                    <li>Adidas</li>
+                    <li>Bata</li>
+                    <li>Fila</li>
+                    <li>Skechers</li>
+                    <li>ASICS</li>
+                    <li>Kering</li>
+                    <li>Khadims</li>
+                    <li>Relaxo</li>
+                </ul> 
+            </li>
+            <li>Video Games<i class="fa fa-angle-right"></i>
+                <ul>
+                    <li>Arcade Games</li>
+                    <li>Cloud Gaming</li>
+                    <li>Console Game </li>
+                    <li>Exertris</li>
+                    <li>Game Client</li>
+                    <li>Game servers</li>
+                    <li>Handheld TV Games</li>
+                    <li>Jungle</li>
+                    <li>Mac Gaming</li>
+                </ul>
+            </li>
+            <li>Books<i class="fa fa-angle-right"></i>
+                <ul>
+                    <li>Stephen King</li>
+                    <li>Leo Tolstoy</li>
+                    <li>J K Rowling</li>
+                    <li>Jane Austen</li>
+                    <li>Chetan Bhagat</li>
+                    <li>Charles Dickens</li>
+                    <li>Mark Wood </li>
+                    <li>R K Laxman</li>
+                    <li>Leo Porter</li>
+                </ul>
+            </li>            
+            <li>New Arrivals<i class="fa fa-angle-right"></i>
+                <ul>
+                    <li>Laptop</li>
+                    <li>Mobile</li>
+                    <li>Jeans</li>
+                    <li>Shirt</li>
+                    <li>KeyBoard</li>
+                    <li>Pen</li>
+                    <li>Hair Driers</li>
+                    <li>Cooker</li>
+                    <li>Momo Maker</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="slider">
+        <div id="slider" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+           <img src="E:\COS THAPAR\Codes and Related Files\ab1.jpg" class="d-block w-100" > 
+                       
+              </div>
+              <div class="carousel-item">
+              <!-- <img src="E:\COS THAPAR\Codes and Related Files\ab2.jpg" class="d-block w-100" >-->
+              <embed src="E:\COS THAPAR\Codes and Related Files\video1.mp4" autostart="True" height=100% width=100% />
+
+
+              </div>
+              <div class="carousel-item">
+               <!-- <img src="E:\COS THAPAR\Codes and Related Files\download.jpg" class="d-block w-100"> -->
+               <embed src="" autostart="True" height=100% width=100% />
+ 
+            </div>
+            </div>
+            <ol class="carousel-indicators">
+                <li data-target="#slider" data-slide-to="0" class="active"></li>
+                <li data-target="#slider" data-slide-to="1"></li>
+                <li data-target="#slider" data-slide-to="2"></li>
+              </ol>
+          </div>
+    </div>
+</section>
+<!------------------featured categories------------->
+<section class="featured-categories">
+    <div class="container">
+        <div class ="row">
+            <div class="col-md-4">
+                <a href="E:\COS THAPAR\Codes and Related Files\page1.html"><img src="E:\COS THAPAR\Codes and Related Files\mobile.jpg"></a>
+            </div>
+            <div class="col-md-4">
+             <a href="E:\COS THAPAR\Codes and Related Files\Headphones.html">  <img src="E:\COS THAPAR\Codes and Related Files\121.png"></a>
+            </div>
+            <div class="col-md-4">
+            <a href="E:\COS THAPAR\Codes and Related Files\watches.html">    <img src="E:\COS THAPAR\Codes and Related Files\watches.jpg"></a>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!------------------on sale Products ----------------------------------------------------->
+<section class="on-sale">
+    <div class="containers">
+        <div class="title-box">
+            <h2>ON SALE</h2>
+        </div>
+        <div class="row">
+        <div class="col-md-3">
+        <div class= "product-top">
+            <img src="E:\COS THAPAR\Codes and Related Files\bikes.jpg">
+                <div class="overlay-right">
+                    <button type="button" class="btn btn-secondary" title="Quick Shop">
+                        <i class="fa fa-eye"></i>
+                    </button>
+                    <button type="button" class="btn btn-secondary" title="Add to WishList">
+                        <i class="fa fa-heart-o"></i>
+                    </button>
+                    <button type="button" class="btn btn-secondary" title="Add to Cart">
+                        <i class="fa fa-shopping-cart"></i>
+                    </button>
+                </div>
+        </div>
+        <div class="product-bottom text-center">
+            <i class ="fa fa-star"></i>
+            <i class ="fa fa-star"></i>
+            <i class ="fa fa-star"></i>
+            <i class ="fa fa-star"></i>
+            <i class ="fa fa-star-half-o"></i> 
+            <h3>BIKE</h3>
+            <h5>Rs.50000</h5>
+        </div>
+        </div>
+        <div class="col-md-3">
+            <div class= "product-top">
+                <img src="E:\COS THAPAR\Codes and Related Files\tshirts.jpg">
+                    <div class="overlay-right">
+                        <button type="button" class="btn btn-secondary" title="Quick Shop">
+                            <i class="fa fa-eye"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary" title="Add to WishList">
+                            <i class="fa fa-heart-o"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart">
+                            <i class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+            </div>
+            <div class="product-bottom text-center">
+                <i class ="fa fa-star"></i>
+                <i class ="fa fa-star"></i>
+                <i class ="fa fa-star"></i>
+                <i class ="fa fa-star"></i>
+                <i class ="fa fa-star"></i> 
+                <h3>T SHIRT</h3>
+                <h5>Rs.200</h5>
+            </div>
+            </div>
+            <div class="col-md-3">
+                <div class= "product-top">
+                    <img src="E:\COS THAPAR\Codes and Related Files\books.jpg">
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to WishList">
+                                <i class="fa fa-heart-o"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                </div>
+                <div class="product-bottom text-center">
+                    <i class ="fa fa-star"></i>
+                    <i class ="fa fa-star"></i>
+                    <i class ="fa fa-star"></i>
+                    <i class ="fa fa-star"></i>
+                    <i class ="fa fa-star-half-o"></i> 
+                    <h3>BOOKS</h3>
+                    <h5>Rs.100</h5>
+                </div>
+                </div>
+                <div class="col-md-3">
+                    <div class= "product-top">
+                        <img src="E:\COS THAPAR\Codes and Related Files\mobile2.jpg">
+                            <div class="overlay-right">
+                                <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                    <i class="fa fa-eye"></i>
+                                </button>
+                                <button type="button" class="btn btn-secondary" title="Add to WishList">
+                                    <i class="fa fa-heart-o"></i>
+                                </button>
+                                <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class ="fa fa-star"></i>
+                        <i class ="fa fa-star"></i>
+                        <i class ="fa fa-star"></i>
+                        <i class ="fa fa-star"></i>
+                        <i class ="fa fa-star-half-o"></i> 
+                        <h3>MOBILE</h3>
+                        <h5>FLAT 40% OFF</h5>
+                    </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class= "product-top">
+                            <img src="E:\COS THAPAR\Codes and Related Files\camera.jpg">
+                                <div class="overlay-right">
+                                    <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                        <i class="fa fa-eye"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-secondary" title="Add to WishList">
+                                        <i class="fa fa-heart-o"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    </button>
+                                </div>
+                        </div>
+                        <div class="product-bottom text-center">
+                            <i class ="fa fa-star"></i>
+                            <i class ="fa fa-star"></i>
+                            <i class ="fa fa-star"></i>
+                            <i class ="fa fa-star"></i>
+                            <i class ="fa fa-star"></i> 
+                            <h3>CAMERA</h3>
+                            <h5>Rs.10000</h5>
+                        </div>
+                    </div>
+                        <div class="col-md-3">
+                            <div class= "product-top">
+                                <img src="E:\COS THAPAR\Codes and Related Files\TV.jpg">
+                                    <div class="overlay-right">
+                                        <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                            <i class="fa fa-eye"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-secondary" title="Add to WishList">
+                                            <i class="fa fa-heart-o"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                            <i class="fa fa-shopping-cart"></i>
+                                        </button>
+                                    </div>
+                            </div>
+                            <div class="product-bottom text-center">
+                                <i class ="fa fa-star"></i>
+                                <i class ="fa fa-star"></i>
+                                <i class ="fa fa-star"></i>
+                                <i class ="fa fa-star"></i>
+                                <i class ="fa fa-star-half-o"></i> 
+                                <h3>TV</h3>
+                                <h5>Rs.7000</h5>
+                            </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class= "product-top">
+                                    <img src="E:\COS THAPAR\Codes and Related Files\bags.jpg">
+                                        <div class="overlay-right">
+                                            <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                                <i class="fa fa-eye"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-secondary" title="Add to WishList">
+                                                <i class="fa fa-heart-o"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </button>
+                                        </div>
+                                </div>
+                                <div class="product-bottom text-center">
+                                    <i class ="fa fa-star"></i>
+                                    <i class ="fa fa-star"></i>
+                                    <i class ="fa fa-star"></i>
+                                    <i class ="fa fa-star-half-o"></i> 
+                                    <h3>BAGS</h3>
+                                    <h5>UPTO 60% OFF</h5>
+                                </div>
+                            </div>  
+                            <div class="col-md-3">
+                                    <div class= "product-top">
+                                        <img src="E:\COS THAPAR\Codes and Related Files\groceries.jpg">
+                                            <div class="overlay-right">
+                                                <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                                    <i class="fa fa-eye"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-secondary" title="Add to WishList">
+                                                    <i class="fa fa-heart-o"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                                    <i class="fa fa-shopping-cart"></i>
+                                                </button>
+                                            </div>
+                                    </div>
+                                    <div class="product-bottom text-center">
+                                        <i class ="fa fa-star"></i>
+                                        <i class ="fa fa-star"></i>
+                                        <i class ="fa fa-star"></i>
+                                        <i class ="fa fa-star"></i>
+                                        <i class ="fa fa-star-half-o"></i> 
+                                        <h3>GROCERIES</h3>
+                                        <h5>UPTO 50% OFF</h5>
+                                    </div>
+                            </div>    
+        </div>
+    </div>
+</section>
+<!------------------The Loot ---------------------------------------------------->
+<section class="the-loot">
+    <div class="containers">
+        <div class="title-box">
+            <h2>THE LOOT</h2>
+        </div>
+        <div class="row">
+        <div class="col-md-3">
+        <div class= "product-top">
+            <img src="E:\COS THAPAR\Codes and Related Files\onion.jpg">
+                <div class="overlay-right">
+                    <button type="button" class="btn btn-secondary" title="Quick Shop">
+                        <i class="fa fa-eye"></i>
+                    </button>
+                    <button type="button" class="btn btn-secondary" title="Add to WishList">
+                        <i class="fa fa-heart-o"></i>
+                    </button>
+                    <button type="button" class="btn btn-secondary" title="Add to Cart">
+                        <i class="fa fa-shopping-cart"></i>
+                    </button>
+                </div>
+        </div>
+        <div class="product-bottom text-center">
+            <i class ="fa fa-star"></i>
+            <i class ="fa fa-star"></i>
+            <i class ="fa fa-star"></i>
+            <i class ="fa fa-star-half-o"></i> 
+            <h3>ONION</h3>
+            <h5>Rs.50 per kg</h5>
+        </div>
+        </div>
+        <div class="col-md-3">
+            <div class= "product-top">
+                <img src="E:\COS THAPAR\Codes and Related Files\necafe.jpg">
+                    <div class="overlay-right">
+                        <button type="button" class="btn btn-secondary" title="Quick Shop">
+                            <i class="fa fa-eye"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary" title="Add to WishList">
+                            <i class="fa fa-heart-o"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart">
+                            <i class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+            </div>
+            <div class="product-bottom text-center">
+                <i class ="fa fa-star"></i>
+                <i class ="fa fa-star"></i>
+                <i class ="fa fa-star"></i>
+                <i class ="fa fa-star"></i>
+                <i class ="fa fa-star"></i> 
+                <h3>NESCAFE</h3>
+                <h5>Rs.200</h5>
+            </div>
+            </div>
+            <div class="col-md-3">
+                <div class= "product-top">
+                    <img src="E:\COS THAPAR\Codes and Related Files\watch25.jpg">
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to WishList">
+                                <i class="fa fa-heart-o"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                </div>
+                <div class="product-bottom text-center">
+                    <i class ="fa fa-star"></i>
+                    <i class ="fa fa-star"></i>
+                    <i class ="fa fa-star"></i>
+                    <i class ="fa fa-star"></i>
+                    <i class ="fa fa-star-half-o"></i> 
+                    <h3>WATCHES</h3>
+                    <h5>25 % OFF</h5>
+                </div>
+                </div>    
+                            <div class="col-md-3">
+                                    <div class= "product-top">
+                                        <img src="E:\COS THAPAR\Codes and Related Files\room heater.jpg">
+                                            <div class="overlay-right">
+                                                <button type="button" class="btn btn-secondary" title="Quick Shop">
+                                                    <i class="fa fa-eye"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-secondary" title="Add to WishList">
+                                                    <i class="fa fa-heart-o"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-secondary" title="Add to Cart">
+                                                    <i class="fa fa-shopping-cart"></i>
+                                                </button>
+                                            </div>
+                                    </div>
+                                    <div class="product-bottom text-center">
+                                        <i class ="fa fa-star"></i>
+                                        <i class ="fa fa-star"></i>
+                                        <i class ="fa fa-star"></i>
+                                        <i class ="fa fa-star"></i>
+                                        <i class ="fa fa-star-half-o"></i> 
+                                        <h3>ROOM HEATER</h3>
+                                        <h5>UPTO 50% OFF</h5>
+                                    </div>
+                            </div>    
+        </div>
+    </div>
+</section>
+
+<!--------------website features--------->
+
+<section class="website-features">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 feature-box">
+                <img src="E:\COS THAPAR\Codes and Related Files\guranteed1.jpg">
+            <div class="feature-text">
+                <p><b> 100% original items </b></p>
+            </div>
+            </div>
+            <div class="col-md-3 feature-box">
+                <img src="E:\COS THAPAR\Codes and Related Files\returnpolicy.jpg">
+            <div class="feature-text">
+                <p><b>30 Days Return</b></p>
+            </div>
+            </div>
+            <div class="col-md-3 feature-box">
+                <img src="E:\COS THAPAR\Codes and Related Files\freedilevery.png">
+            <div class="feature-text">
+                <p><b>Free Delivery</b></p>
+            </div>
+            </div>
+            <div class="col-md-3 feature-box">
+                <img src="E:\COS THAPAR\Codes and Related Files\onlinepay.jpg">
+            <div class="feature-text">
+                <p><b> All Payment Modes </b></p>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-------------------footer----------->
+<section class="footer">
+    <div class="container tex-center">
+        <div class="row">
+
+        <div class="col-md-3">
+        <h1>Useful Links</h1>
+        <p><a href="E:\COS THAPAR\Codes and Related Files\private_policy.txt">Private Policy</a></p>
+            <p><a href="E:\COS THAPAR\Codes and Related Files\return policy.txt ">Return Policy</a></p>
+            <p><a href="E:\COS THAPAR\Codes and Related Files\terms of use.txt ">Terms of Use</a></p>
+        </div>
+
+            <div class="col-md-3">
+            <h1>Company</h1>
+            <p><a href="https://www.facebook.com/profile.php?id=100025764464127">About Us</a></p>
+            <p><a href="https://www.facebook.com/profile.php?id=100025764464127">Contact Us</a></p>
+            <p><a href="E:\COS THAPAR\Codes and Related Files\career.txt">Career</a></p>
+            </div>
+
+            <div class="col-md-3">
+                <h1>Follow Us</h1>
+                <p><i class ="fa fa-facebook-official"></i> <a href="https://www.thapar.edu/"> Facebook </a></p>
+                <p><i class ="fa fa-instagram"></i><a href="https://www.thapar.edu/"> Instagram</a></p>
+                <p><i class ="fa fa-twitter"></i>  <a href="https://www.thapar.edu/"> Twitter</a></p>
+                </div>
+
+            <div class="col-md-3">
+                    <h1>Download App</h1>
+                    <img src="E:\COS THAPAR\Codes and Related Files\playstore.jpg">
+                    </div>    
+        </div>
+        <hr>
+        <p class=""> <i class="fa fa-heart-o"></i> </p>
+    </div>
+</section>
+
+<script>
+function openmenu()
+{
+    document.getElementById("side-menu").style.display="block";
+    document.getElementById("menu-btn").style.display="none";
+    document.getElementById("close-btn").style.display="block";   
+}
+function closemenu()
+{
+    document.getElementById("side-menu").style.display="none";
+    document.getElementById("menu-btn").style.display="block";
+   document.getElementById("close-btn").style.display="none";
+}
+</script>
+</body>
+</html>
